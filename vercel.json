@@ -1,16 +1,7 @@
 {
   "rewrites": [
-    {
-      "source": "/:path(gh/*)",
-      "destination": "https://github.com/:path*"
-    },
-    {
-      "source": "/:path(raw/*)",
-      "destination": "https://raw.githubusercontent.com/:path*"
-    },
-    {
-      "source": "/:path(?!(raw|gh)*)",
-      "destination": "https://:path*"
-    }
+    { "source": "/:path(gh/*)", "destination": "https://github.com/:path*" },
+    { "source": "/:path(raw/*)", "destination": "https://raw.githubusercontent.com/:path*" },
+    { "source": "/:path(?!(raw|gh)*)", "destination": "https://:path*" }
   ]
 }
