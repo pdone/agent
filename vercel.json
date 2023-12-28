@@ -9,7 +9,7 @@
       "destination": "https://raw.githubusercontent.com/:match*"
     },
     {
-      "source": "/:match(?!gh)*)",
+      "source": "/:match((?!gh)*)",
       "destination": "https://:match*"
     }
   ]
