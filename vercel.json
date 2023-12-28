@@ -9,7 +9,7 @@
       "destination": "https://raw.githubusercontent.com/:path*"
     },
     {
-      "source": "/:path((?!gh/).*)",
+      "source": "/:path*",
       "destination": "https://:path*"
     }
   ]
