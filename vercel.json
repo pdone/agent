@@ -1,11 +1,15 @@
 {
   "rewrites": [
     {
-      "source": "/:path((http|https)//*)",
-      "destination": ":path*"
+      "source": "/:path(gh/*)",
+      "destination": "https://github.com/:path*"
     },
     {
-      "source": "/:path(?!(http|https)//*)",
+      "source": "/:path(raw/*)",
+      "destination": "https://raw.githubusercontent.com/:path*"
+    },
+    {
+      "source": "/:path(?!(raw|gh)*)",
       "destination": "https://:path*"
     }
   ]
