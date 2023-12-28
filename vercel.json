@@ -5,11 +5,11 @@
       "destination": "https://github.com/:match*"
     },
     {
-      "source": "/raw/:match*)",
+      "source": "/raw/:match*",
       "destination": "https://raw.githubusercontent.com/:match*"
     },
     {
-      "source": "/:match*",
+      "source": "/:match((?!(gh|raw)).*)",
       "destination": "https://:match*"
     }
   ]
