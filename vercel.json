@@ -3,6 +3,8 @@
     { "source": "/:match/:url*", "destination": "https://:match/:url*" },
     { "source": "/:match/:url*/", "destination": "https://:match/:url*/" },
     { "source": "/unsafe/:match/:url*", "destination": "http://:match/:url*" },
-    { "source": "/unsafe/:match/:url*/", "destination": "http://:match/:url*/" }
+    { "source": "/unsafe/:match/:url*/", "destination": "http://:match/:url*/" },
+    { "source": "/gh/:match*", "destination": "https://github.com/:match*" },
+    { "source": "/raw/:match*", "destination": "https://raw.githubusercontent.com/:match*" }
   ]
 }
